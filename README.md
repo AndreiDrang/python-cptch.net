@@ -1,6 +1,7 @@
 # python-cptchnet
 
 [![PyPI version](https://badge.fury.io/py/python-cptchnet.svg)](https://badge.fury.io/py/python-cptchnet)
+[![Build Status](https://semaphoreci.com/api/v1/andreidrang/python-cptch-net/branches/master/badge.svg)](https://semaphoreci.com/andreidrang/python-cptch-net)
 [![Maintainability](https://api.codeclimate.com/v1/badges/f6221d34a1c165388aa6/maintainability)](https://codeclimate.com/github/AndreiDrang/python-cptch.net/maintainability)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e6a962ae5c9c4ca9aceb401ef58fff1b)](https://www.codacy.com/app/drang.andray/python-cptch.net?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AndreiDrang/python-cptch.net&amp;utm_campaign=Badge_Grade)
 
@@ -34,7 +35,7 @@ python setup.py install
 ### Реализованы следующие методы:
 
 
-1.[Решение капчи-изображения(большие и маленькие).](https://github.com/AndreiDrang/python-rucaptcha/blob/master/python_rucaptcha/ImageCaptcha.py)
+1.[Решение капчи-изображения.](https://github.com/AndreiDrang/python-cptch.net/blob/master/examples/image_captcha_example.py)
 
 Краткий пример:
 ```python
@@ -56,7 +57,7 @@ elif user_answer['error']:
 	print(user_answer['errorBody']['id'])
 ```
 
-2.[Решение ReCaptcha v2.](https://github.com/AndreiDrang/python-rucaptcha/blob/master/python_rucaptcha/ReCaptchaV2.py)
+2.[Решение ReCaptcha v2.](https://github.com/AndreiDrang/python-cptch.net/blob/master/examples/recaptcha_v2_example.py)
 
 Краткий пример:
 ```python
