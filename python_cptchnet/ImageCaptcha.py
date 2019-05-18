@@ -190,9 +190,7 @@ class ImageCaptcha:
 
             # Отправляем на сервис изображение капчи и другие парметры,
             # в результате получаем JSON ответ с номером решаемой капчи и получая ответ - извлекаем номер
-            captcha_id = self.session.post(
-                url_request, data=self.post_payload
-            ).json()
+            captcha_id = self.session.post(url_request, data=self.post_payload).json()
 
         except (IOError, FileNotFoundError) as error:
             self.result.update({"error": True, "errorBody": {"text": error, "id": -1}})
@@ -391,9 +389,7 @@ class aioImageCaptcha:
                 {"body": base64.b64encode(content).decode("utf-8")}
             )
             async with aiohttp.ClientSession() as session:
-                async with session.post(
-                    url_request, data=self.post_payload
-                ) as resp:
+                async with session.post(url_request, data=self.post_payload) as resp:
                     captcha_id = await resp.json()
 
         except Exception as error:

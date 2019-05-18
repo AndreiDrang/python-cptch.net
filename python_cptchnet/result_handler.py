@@ -27,9 +27,7 @@ def get_sync_result(
                 result.update(
                     {
                         "error": 1,
-                        "errorBody": CaptchaError().errors(
-                            captcha_response["request"]
-                        ),
+                        "errorBody": CaptchaError().errors(captcha_response["request"]),
                     }
                 )
                 return result

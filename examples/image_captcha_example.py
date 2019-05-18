@@ -5,7 +5,6 @@ import base64
 from python_cptchnet import ImageCaptcha
 
 
-
 """
 Этот пример показывает то как нужно работать с модулем для распознования обычной капчи изображением,
 на примере нашего сайта.
@@ -29,7 +28,7 @@ with ImageCaptcha.ImageCaptcha(
     service_key=SERVICE_KEY,
     img_path="test_files",
     img_clearing=True,
-    save_format="const"
+    save_format="const",
 ) as img_captcha:
     result = img_captcha.captcha_handler(captcha_link=image_link)
     print(result)
@@ -88,9 +87,9 @@ base_64_link = base64.b64encode(
     ).content
 ).decode("utf-8")
 
-user_answer_base64 = ImageCaptcha.ImageCaptcha(
-    service_key=SERVICE_KEY
-).captcha_handler(captcha_base64=base_64_link)
+user_answer_base64 = ImageCaptcha.ImageCaptcha(service_key=SERVICE_KEY).captcha_handler(
+    captcha_base64=base_64_link
+)
 print(user_answer_base64)
 """
 user_answer_... - это JSON строка с соответствующими полями
