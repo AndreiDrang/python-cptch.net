@@ -1,7 +1,7 @@
 # python-cptchnet
 
 [![PyPI version](https://badge.fury.io/py/python-cptchnet.svg)](https://badge.fury.io/py/python-cptchnet)
-[![Build Status](https://semaphoreci.com/api/v1/andreidrang/python-cptch-net/branches/master/badge.svg)](https://semaphoreci.com/andreidrang/python-cptch-net)
+[![Build Status](https://semaphoreci.com/api/v1/andreidrang/python-cptch-net/branches/master/shields_badge.svg)](https://semaphoreci.com/andreidrang/python-cptch-net)
 [![Maintainability](https://api.codeclimate.com/v1/badges/f6221d34a1c165388aa6/maintainability)](https://codeclimate.com/github/AndreiDrang/python-cptch.net/maintainability)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/e6a962ae5c9c4ca9aceb401ef58fff1b)](https://www.codacy.com/app/drang.andray/python-cptch.net?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=AndreiDrang/python-cptch.net&amp;utm_campaign=Badge_Grade)
 
