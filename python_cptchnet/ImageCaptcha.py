@@ -109,7 +109,7 @@ class ImageCaptcha:
                 {"body": base64.b64encode(content).decode("utf-8")}
             )
             captcha_id = self.session.post(
-                self.url_request, data=self.post_payload
+                url_request, data=self.post_payload
             ).json()
 
         except Exception as error:
