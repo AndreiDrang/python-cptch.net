@@ -108,9 +108,7 @@ class ImageCaptcha:
             self.post_payload.update(
                 {"body": base64.b64encode(content).decode("utf-8")}
             )
-            captcha_id = self.session.post(
-                url_request, data=self.post_payload
-            ).json()
+            captcha_id = self.session.post(url_request, data=self.post_payload).json()
 
         except Exception as error:
             self.result.update({"error": True, "errorBody": {"text": error, "id": -1}})

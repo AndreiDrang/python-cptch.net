@@ -12,7 +12,7 @@ URL = "https://github.com/AndreiDrang/python-cptch.net"
 EMAIL = "drang.andray@gmail.com"
 AUTHOR = "AndreiDrang"
 REQUIRES_PYTHON = ">=3.6.0"
-VERSION = "0.1"
+VERSION = "0.2"
 REQUIRED = ["requests==2.21.0", "aiohttp==3.5.4"]
 
 here = os.path.abspath(os.path.dirname(__file__))
